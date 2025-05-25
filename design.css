@@ -1,0 +1,292 @@
+/*reset css*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: poppins;
+}
+/*font luar*/
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B);
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B);
+html{
+    font-size:62,5% ;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(2, 3, 3);
+    color: white;
+}
+/*ilangin bars*/
+.menu-icon{
+    display: none;
+    font-size: 1.3rem;
+}
+/* kepala awal awal*/
+header{
+    display:flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(12px);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/*logo */
+
+
+.logo{
+    font-size: 1rem;
+    background-color:transparent;
+    font-weight:600;
+    display:flex ;
+    color:rgb(251, 251, 255) ;
+    cursor: pointer;
+    transition: 0.5s ease;
+    background: rgba(255, 255, 255, 0.582);
+box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.24);
+backdrop-filter: blur( px );
+-webkit-backdrop-filter: blur( 10px );
+border-radius: 12px;
+border: 5px solid rgba(255, 255, 255, 0.171);
+}
+
+
+.sosmed1 a i {
+    margin:6px;
+    transition: 0.3s ease;
+}
+.sosmed1 a i:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+.logo:hover{
+    
+    transform: scale(1.1);
+}
+/*navbarnya penting iki*/
+
+
+nav{
+    background: rgba( 255, 255, 255, 0 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );;
+    
+}
+nav a{
+    color: rgb(245, 245, 245);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    border-bottom: transparent 1px solid;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+    
+    
+
+}
+
+nav a:hover,
+nav a:active{
+    transform: scale(1.1);
+    color: rgb(0, 0, 255);
+    border-bottom: blue 2px solid;
+    
+}
+
+
+/*flexible v1*/
+@media (max-width:600px) {
+    .menu-icon{
+        display: block;
+
+    }
+    
+    .top-nav a{
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid white;
+        background-color: rgba( 31, 38, 135, 0.37 );
+        border-top: rgba(15, 38, 172, 0.377) solid 0.6rem ;
+        overflow: hidden;
+        display: none;
+    }
+
+    nav:active{
+    display: block;
+    } 
+    
+    nav a{
+        margin: 0.5rem ;
+        display: block;
+        font-size: 1rem;
+        
+    }
+    nav a:hover,
+    nav a:active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5 solid rgb(93, 113, 114);
+        color: rgb(0, 38, 255);
+    }
+
+    .top-nav.respon {
+        float: none;
+        display: block;
+        
+    }
+    
+}
+
+#rumah {
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    
+
+}
+
+.home-konten{
+    padding: 4rem;
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.15);
+box-shadow: 0 20px 303px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 17.5px );
+-webkit-backdrop-filter: blur( 17.5px );
+border-radius: 98px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+
+.home-img1{
+    width: 25rem;
+    display: flex;
+    padding: 20px ;
+    border-radius: 5rem;
+    
+    
+}
+
+@media (max-width:600px){
+    .home-img1{
+        display: none;
+    }
+    
+}
+
+
+
+span{
+    color: rgb(0, 17, 255);
+    
+}
+
+
+/*img float*/
+
+@keyframes terbang {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.home-img1{
+    animation: terbang 2s ease-in-out infinite;
+}
+
+
+/* about style*/
+
+#about{
+    padding: 120px 20px;
+    position: relative;
+    min-height: vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-wraper{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.about-header{
+    text-align: center;
+    border-bottom: black solid 0,5 rem;
+}
+
+.titel-about{
+    display: inline-block;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.judul-about{
+    border-bottom: rgba(4, 0, 255, 0.548) solid ;
+}
+
+.konten-about  {
+    /* From https://css.glass */
+background: rgba(0, 0, 0, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(31, 38, 135, 0.274);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(0, 60, 255, 0.99);
+
+}
+
+.tombol-menu{
+display: none;
+}
+
+
+
+/*mobile flex*/
+
+/*@media (max-width:430px) {
+    .menu-icon{
+        display: block;
+    }
+    nav ul{
+        flex-direction: column;
+        overflow: hidden;
+        
+    }
+    
+}*/
+
+
+
+
+
+
